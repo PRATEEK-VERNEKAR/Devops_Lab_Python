@@ -1,5 +1,10 @@
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from src.mymodule import add  # Assuming 'mymodule.py' is located in 'src' directory
+
 import unittest
-from mymodule import add
 
 class TestMyModule(unittest.TestCase):
     def test_add(self):
